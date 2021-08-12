@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FontAwesome Icons -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Font Viga Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <!-- Font Poppins Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
+
+    <!-- logo -->
+    <link rel="icon" type="image/m2.jpg" href="m2.jpg">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <style>
+      @keyframes hideLoader{0%{ width: 100%; height: 100%; }100%{ width: 0; height: 0; }  }  body > div.loader{ position: fixed; background: white; width: 100%; height: 100%; z-index: 1071; opacity: 0; transition: opacity .5s ease; overflow: hidden; pointer-events: none; display: flex; align-items: center; justify-content: center;}body:not(.loaded) > div.loader{ opacity: 1;}body:not(.loaded){ overflow: hidden;}  body.loaded > div.loader{animation: hideLoader .5s linear .5s forwards;  } /* Typing Animation */.loading-animation {width: 6px;height: 6px;border-radius: 50%;animation: typing 1s linear infinite alternate;position: relative;left: -12px;}@keyframes typing {0% {background-color: rgba(100,100,100, 1);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 0.2);}25% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),24px 0px 0px 0px rgba(100,100,100, 0.2);}75% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 1);}}
+    </style>
+
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+    <title>May Riswa Ayu Mutia Rakasiwi</title>
+  </head>
+  <body class="light-theme">
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="navbar">
+      <div class="container" id="navCont">
+        <a class="navbar-brand text-secondary" href="#">Riswa's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li>
+              <div class="toggle-container fixed-bottom">
+                <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                <span>Dark Mode Active</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <img src="img/portfolio.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 col-sm-12 hero">
+            <h1>Hi, I am <span>Riswa</span></h1>
+            <p>Welcome To My<br>Website</p>
+            <div class="sosialmedia">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mayriswa20@gmail.com" target="_blank"><i class="bi bi-envelope-fill fa-2x"></i></a>
+              <a href="https://www.instagram.com/mayriswa_/" target="blank"><i class="bi bi-instagram fa-2x"></i></a>
+            </div>
+            <a href="#contact" class="btn btn-primary">Contact Me &nbsp; <span class="iconify" data-inline="false" data-icon="akar-icons:send"></span></a>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="lingkaran"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About Me -->
+    <section id="about">
+      <img src="img/bubblepink.svg" class="bubblepink img-fluid" alt="" width="300">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-5">
+            <h3>About <span>Me</span></h3>
+            <p class="bawah text-secondary">Ini merupakan Biodata diri Saya.</p>
+          </div>
+        </div>
+        <div class="row about">
+          <div class="col-lg-6 col-sm-12 mt-2">
+            <h2>Wanna Know Me?</h2>
+            <hr>
+            <p>Hi 👋,nama saya May Riswa Ayu Mutia Rakasiwi, panggil saya Riswa, website ini dibuat saya berumur 18 tahun dan dibuat pada bulan Agustus saat pandemi PPKM diperpanjang dan sekolah online....</p>
+            <div class="keterangan">
+              <div class="icon">
+                <span class="iconify book" width="26" data-inline="false"data-icon="fa-solid:address-book"></span>
+              </div>
+              <div class="exp exp1 text-center">
+                <h4>20 September 2003</h4>
+                <p>Date Of<br>Birth</p>
+              </div>
+              <div class="icon">
+                <span class="iconify smile" width="26" data-inline="false" data-icon="fa-regular:smile-beam"></span>
+              </div>
+              <div class="exp text-center">
+                <h4>Kunir Kidul, Kunir, Lumajang</h4>
+                <p>Stay <br>In</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 mt-3">
+            <img src="img/bubble.png" class="img-fluid bubble" alt="" width="400">
+            <img src="img/girl.png"  class="img-fluid girl" alt="" width="350">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About-->
+
+    <!-- My Projects -->
+    <div class="bubble">
+      <img src="img/t.svg" class="circle2 img-fluid" alt="">
+      <div class="circle img-fluid"></>
+    </div>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-5">
+            <h2>My <span>Album</span>:)</h2>
+            <p class="bawah">Photo of me and my mom</p>
+          </div>
+        </div>
+        <div class="row card-projects">
+          <div class="col-lg-4 col-sm-12 justify-content-center d-flex">
+            <div class="main-card">
+              <div class="card-image">
+                <img src="img/bm1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="card-text">
+                <h5>The photo when my mother and I were on the yogo bridge, Pasirian, Lumajang, East Java</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 justify-content-center d-flex">
+            <div class="main-card">
+              <div class="card-image">
+                <img src="img/bm2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="card-text">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 justify-content-center d-flex">
+            <div class="main-card">
+              <div class="card-image">
+                <img src="img/bm.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="card-text">
+                <h5>The photo when my mother and I were at Aunt Candipuro's house, Lumajang, East Java</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir My Projects-->
+
+    <!-- Skills -->
+    <section id="skills">
+      <img src="img/bubble.png" class="img-fluid  bubbleend" alt="" width="300">
+      <div class="bubble"></div>
+      <div class="container">
+        <div class="row">
+          <h2 class="bawah1">Hobby</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-12">
+            <div class="main-skills skill1">
+              <div class="card-skills text-center">
+               <img src="img/buku.svg" alt="" width="100">
+                <h6>Reading Novels</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="main-skills skill2">
+              <div class="card-skills text-center">
+                <img src="img/renang.svg" alt="" width="100">
+                <h6>Swimming</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="main-skills skill3">
+              <div class="card-skills text-center">
+                <img src="img/musik.png" alt="" width="100">
+                <h6>Listening to songs</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="main-skills skill4">
+              <div class="card-skills text-center">
+                <img src="img/jogging.png" alt="" width="100">
+                <h6>Jogging</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/hiasan.png" class="createskills img-fluid float-end" alt="hiasan">
+    </section>
+    <!-- Akhir Skills -->
+
+    <!-- Client Feedback -->
+    <section id="client">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-3 text-center">
+            <h2 class="bawah">Quotes</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col justify-content-center d-flex">
+            <div class="main-client">
+              <div class="card-client">
+                <div class="people">
+                  <img src="img/m1.jpg" alt="" class="img-fluid" width="100">
+                </div>
+                <div class="quote">
+                  <img src="img/opentag.png" alt="" class="img-fluid" width=70 height="">
+                </div>
+                <div class="card-text">
+                  <h5>" Kalau mimpimu belum tercapai, jangan pernah mengubah mimpinya, tapi ubahlah strateginya. " </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col brand justify-content-center d-flex mt-5">
+            <ul>
+              <li><img src="https://api.wpmet.com/auth/wp-content/uploads/2020/12/logo_05.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Client Feedback-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-5 text-center" >
+            <h2 class="bawah"><span>Contact</span> Me</h2>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-6 col-sm-12">
+            <img src="img/contact.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 col-sm-12">
+              <div class="alert alert-info alert-dismissible fade show my-alert d-none" role="alert">
+                  <strong>Thank You!</strong> We have received your message.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <form name='contact-my-website'>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-kirim send float-end">Send</button>
+
+                  <button class="btn-load btn-loading float-end d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                  </button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-white copyright" style="background-color: var(--pink);  border-top: 2px solid rgb(243, 71, 192)">
+      <div class="container pt-4">
+          <!-- Social Media -->
+          <section class="mb-4">
+            <h2 class="footername">Made By May Riswa</h2>
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1"
+              href="https://www.instagram.com/mayriswa_/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              target="blank"><i class="fab fa-instagram"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3 fw-bold " style="background-color: #728df6; border-top: 2px solid var(--blue)">
+          © 2021 Copyright | MRAMA
+      </div>
+    <script src="script.js"></script>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">    
+      $('.js-scroll-trigger').click(function() {
+          $('.navbar-collapse').collapse('hide');
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+  </body>
+</html>
